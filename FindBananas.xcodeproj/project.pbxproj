@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F363884B114311E63F73BC8 /* Pods_FindBananas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEA70100CE387C4CC8DF9E3 /* Pods_FindBananas.framework */; };
 		F50546801EEE726C00B7FF2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505467F1EEE726C00B7FF2D /* AppDelegate.swift */; };
 		F50546821EEE726C00B7FF2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50546811EEE726C00B7FF2D /* ViewController.swift */; };
 		F50546851EEE726C00B7FF2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50546831EEE726C00B7FF2D /* Main.storyboard */; };
 		F50546871EEE726C00B7FF2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50546861EEE726C00B7FF2D /* Assets.xcassets */; };
 		F505468A1EEE726C00B7FF2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50546881EEE726C00B7FF2D /* LaunchScreen.storyboard */; };
+		F54E55981EF01F5A0078FD0E /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F54E55971EF01F5A0078FD0E /* music.mp3 */; };
+		F5D2E89A1EEE750F00CFCE2C /* visualRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2E8991EEE750F00CFCE2C /* visualRecognition.swift */; };
+		F5D2E89C1EEE7A3900CFCE2C /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2E89B1EEE7A3900CFCE2C /* constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2292EFD9FDD9D4ACD72B6EF3 /* Pods-FindBananas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindBananas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindBananas/Pods-FindBananas.debug.xcconfig"; sourceTree = "<group>"; };
+		9FEA70100CE387C4CC8DF9E3 /* Pods_FindBananas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindBananas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E8A2754C04240ECD70B590 /* Pods-FindBananas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindBananas.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindBananas/Pods-FindBananas.release.xcconfig"; sourceTree = "<group>"; };
 		F505467C1EEE726C00B7FF2D /* FindBananas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindBananas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F505467F1EEE726C00B7FF2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F50546811EEE726C00B7FF2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		F50546861EEE726C00B7FF2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F50546891EEE726C00B7FF2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F505468B1EEE726C00B7FF2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54E55971EF01F5A0078FD0E /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		F5D2E8991EEE750F00CFCE2C /* visualRecognition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = visualRecognition.swift; sourceTree = "<group>"; };
+		F5D2E89B1EEE7A3900CFCE2C /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F363884B114311E63F73BC8 /* Pods_FindBananas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30E05121236BA3E17842159E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2292EFD9FDD9D4ACD72B6EF3 /* Pods-FindBananas.debug.xcconfig */,
+				D1E8A2754C04240ECD70B590 /* Pods-FindBananas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		59E2AE86461258C487C8F72D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FEA70100CE387C4CC8DF9E3 /* Pods_FindBananas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F50546731EEE726C00B7FF2D = {
 			isa = PBXGroup;
 			children = (
 				F505467E1EEE726C00B7FF2D /* FindBananas */,
 				F505467D1EEE726C00B7FF2D /* Products */,
+				30E05121236BA3E17842159E /* Pods */,
+				59E2AE86461258C487C8F72D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +84,41 @@
 		F505467E1EEE726C00B7FF2D /* FindBananas */ = {
 			isa = PBXGroup;
 			children = (
+				F5D2E89D1EEE839600CFCE2C /* Model */,
+				F5D2E89E1EEE83A300CFCE2C /* Controller */,
 				F505467F1EEE726C00B7FF2D /* AppDelegate.swift */,
-				F50546811EEE726C00B7FF2D /* ViewController.swift */,
 				F50546831EEE726C00B7FF2D /* Main.storyboard */,
+				F54E55961EF01F340078FD0E /* Resource */,
 				F50546861EEE726C00B7FF2D /* Assets.xcassets */,
 				F50546881EEE726C00B7FF2D /* LaunchScreen.storyboard */,
 				F505468B1EEE726C00B7FF2D /* Info.plist */,
 			);
 			path = FindBananas;
+			sourceTree = "<group>";
+		};
+		F54E55961EF01F340078FD0E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F54E55971EF01F5A0078FD0E /* music.mp3 */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		F5D2E89D1EEE839600CFCE2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5D2E89B1EEE7A3900CFCE2C /* constant.swift */,
+				F5D2E8991EEE750F00CFCE2C /* visualRecognition.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F5D2E89E1EEE83A300CFCE2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F50546811EEE726C00B7FF2D /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F505468E1EEE726C00B7FF2D /* Build configuration list for PBXNativeTarget "FindBananas" */;
 			buildPhases = (
+				A4C0E7BD7004A81DEFB3599D /* [CP] Check Pods Manifest.lock */,
 				F50546781EEE726C00B7FF2D /* Sources */,
 				F50546791EEE726C00B7FF2D /* Frameworks */,
 				F505467A1EEE726C00B7FF2D /* Resources */,
+				367D568A896323B0F57E7121 /* [CP] Embed Pods Frameworks */,
+				C55C78FE70370ABB43FA8B8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F505468A1EEE726C00B7FF2D /* LaunchScreen.storyboard in Resources */,
+				F54E55981EF01F5A0078FD0E /* music.mp3 in Resources */,
 				F50546871EEE726C00B7FF2D /* Assets.xcassets in Resources */,
 				F50546851EEE726C00B7FF2D /* Main.storyboard in Resources */,
 			);
@@ -132,13 +193,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		367D568A896323B0F57E7121 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindBananas/Pods-FindBananas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C0E7BD7004A81DEFB3599D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C55C78FE70370ABB43FA8B8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindBananas/Pods-FindBananas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F50546781EEE726C00B7FF2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D2E89A1EEE750F00CFCE2C /* visualRecognition.swift in Sources */,
 				F50546821EEE726C00B7FF2D /* ViewController.swift in Sources */,
 				F50546801EEE726C00B7FF2D /* AppDelegate.swift in Sources */,
+				F5D2E89C1EEE7A3900CFCE2C /* constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,10 +370,12 @@
 		};
 		F505468F1EEE726C00B7FF2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2292EFD9FDD9D4ACD72B6EF3 /* Pods-FindBananas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LU3A74U7FA;
 				INFOPLIST_FILE = FindBananas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = myapp.FindBananas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +385,12 @@
 		};
 		F50546901EEE726C00B7FF2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1E8A2754C04240ECD70B590 /* Pods-FindBananas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LU3A74U7FA;
 				INFOPLIST_FILE = FindBananas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = myapp.FindBananas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +417,7 @@
 				F50546901EEE726C00B7FF2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

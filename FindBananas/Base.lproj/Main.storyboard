@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="n7q-tF-5TO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Minions Find...-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FindBananas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,124 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APP page.002" translatesAutoresizingMaskIntoConstraints="NO" id="JEM-Rg-EJI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="thD-hL-q5P">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDs-dk-AqY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mininon with banana4" translatesAutoresizingMaskIntoConstraints="NO" id="lig-xv-vMy">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="503"/>
+                                        <color key="backgroundColor" red="0.99542015790939331" green="0.90019387006759644" blue="0.27728420495986938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ch5-KG-aCD">
+                                        <rect key="frame" x="0.0" y="503" width="375" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JJQ-cN-4rd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Share">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ShareTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foy-0e-fnR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdW-Qn-4en">
+                                        <rect key="frame" x="0.0" y="553" width="375" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="XSy-XK-7P2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="OkTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hlj-QU-PBe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lig-xv-vMy" secondAttribute="trailing" id="8yB-6Z-ipF"/>
+                                    <constraint firstItem="FdW-Qn-4en" firstAttribute="leading" secondItem="wDs-dk-AqY" secondAttribute="leading" id="GTr-jw-u6r"/>
+                                    <constraint firstAttribute="bottom" secondItem="FdW-Qn-4en" secondAttribute="bottom" id="HcR-3I-Wye"/>
+                                    <constraint firstItem="lig-xv-vMy" firstAttribute="leading" secondItem="wDs-dk-AqY" secondAttribute="leading" id="LRh-PQ-yE9"/>
+                                    <constraint firstAttribute="trailing" secondItem="FdW-Qn-4en" secondAttribute="trailing" id="a2p-Bq-kQr"/>
+                                    <constraint firstItem="ch5-KG-aCD" firstAttribute="leading" secondItem="wDs-dk-AqY" secondAttribute="leading" id="cZM-P8-EuW"/>
+                                    <constraint firstItem="ch5-KG-aCD" firstAttribute="top" secondItem="lig-xv-vMy" secondAttribute="bottom" id="gSK-C7-tzV"/>
+                                    <constraint firstItem="lig-xv-vMy" firstAttribute="top" secondItem="wDs-dk-AqY" secondAttribute="top" id="hm2-aF-I8O"/>
+                                    <constraint firstAttribute="trailing" secondItem="ch5-KG-aCD" secondAttribute="trailing" id="ij7-X5-IJi"/>
+                                    <constraint firstItem="FdW-Qn-4en" firstAttribute="top" secondItem="ch5-KG-aCD" secondAttribute="bottom" id="zww-zn-VzG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wDs-dk-AqY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GQm-2o-k8f"/>
+                            <constraint firstItem="JEM-Rg-EJI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GmD-Nw-8FR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="thD-hL-q5P" secondAttribute="bottom" id="QL4-gQ-vG4"/>
+                            <constraint firstAttribute="trailing" secondItem="wDs-dk-AqY" secondAttribute="trailing" id="S86-Qh-5Pr"/>
+                            <constraint firstItem="thD-hL-q5P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c57-vc-eMf"/>
+                            <constraint firstItem="wDs-dk-AqY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d87-pi-rKA"/>
+                            <constraint firstItem="JEM-Rg-EJI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="egV-h8-fTb"/>
+                            <constraint firstAttribute="trailing" secondItem="JEM-Rg-EJI" secondAttribute="trailing" id="hNK-qA-OXL"/>
+                            <constraint firstItem="thD-hL-q5P" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oZq-Gk-z7D"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JEM-Rg-EJI" secondAttribute="bottom" id="q93-t6-jx8"/>
+                            <constraint firstAttribute="trailing" secondItem="thD-hL-q5P" secondAttribute="trailing" id="tDn-80-BCh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wDs-dk-AqY" secondAttribute="bottom" id="z24-kJ-qbl"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Minions Find..." id="NZB-RP-rVP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="JnR-Uw-gGU">
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="bbE-4S-tPk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraButton" destination="JnR-Uw-gGU" id="Ran-Jr-qn8"/>
+                        <outlet property="imageView" destination="thD-hL-q5P" id="vaB-Rl-PE4"/>
+                        <outlet property="showMinion" destination="wDs-dk-AqY" id="DNw-yd-iKb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="muF-Kg-TiL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n7q-tF-5TO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3Go-rf-3Kg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="peP-dE-aIM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHh-qr-fZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182" y="123"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="APP page.002" width="375" height="603"/>
+        <image name="mininon with banana4" width="473" height="709"/>
+    </resources>
 </document>
